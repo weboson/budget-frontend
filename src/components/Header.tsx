@@ -27,7 +27,7 @@ const Header: FC = () => {
 
     return (
         <header className='flex items-center p-4 shadow-sm bg-slate-800 backdrop-blur-sm'>
-            <Link to="/">
+            <Link to="/budget-frontend">
                 <FaBtc size={20} />
             </Link>
 
@@ -38,13 +38,13 @@ const Header: FC = () => {
                     <nav className='ml-auto mr-10'>
                         <ul className="flex items-center gap-5">
                             <li>
-                                <NavLink to={'/'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Home</NavLink>
+                                <NavLink to={'/budget-frontend'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Home</NavLink>
                             </li>
                             <li>
-                                <NavLink to={'/transactions'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Transactions </NavLink>
+                                <NavLink to={'/budget-frontend/transactions'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Transactions </NavLink>
                             </li>
                             <li>
-                                <NavLink to={'/categories'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Categories</NavLink>
+                                <NavLink to={'/budget-frontend/categories'} className={({ isActive }) => isActive ? 'text-white' : 'text-white/50'}> Categories</NavLink>
                             </li>
                         </ul>
                     </nav>

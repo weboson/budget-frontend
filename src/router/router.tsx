@@ -9,7 +9,7 @@ import Transactions, { transactionAction, transactionLoader } from "../pages/Tra
 
 export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "/budget-frontend/",
         element: <Layout />, // основной шаблон
         errorElement: <ErrorPage />, // шаблон ошибки
         // дочерние страницы
@@ -19,7 +19,7 @@ export const router = createBrowserRouter([
                 element: <Home />,
             },
             {
-                path: "transactions",
+                path: "/budget-frontend/transactions",
                 action: transactionAction,
                 loader: transactionLoader,
                 element: (    
@@ -29,7 +29,7 @@ export const router = createBrowserRouter([
                 ),
             },
             {
-                path: "categories",
+                path: "/budget-frontend/categories",
                 action: categoriesAction, // из react-router-dom, подробнее: https://reactrouter.com/en/main/components/form#mutation-submissions
             // useLoaderData() возвращает данные (в Categories.tsx), которые возращает метод (categoryLoader), подключенный в router.tsx в поле "loader"
                 loader: categoryLoader, // https://reactrouter.com/en/main/hooks/use-loader-data#useloaderdata
@@ -40,7 +40,7 @@ export const router = createBrowserRouter([
                 ),
             },
             {
-                path: "auth",
+                path: "/budget-frontend/auth",
                 element: <Auth />,
             }
         ]

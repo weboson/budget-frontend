@@ -8,7 +8,7 @@ const ErrorPage: FC = () => {
     <div className="flex min-h-screen flex-col items-center justify-center gap-10 bg-slate-900 font-roboto text-white">
       <img className="w-80" src={img} alt="" />
       <Link
-        to={"/"}
+        to={"/budget-frontend"}
         className="rounded-md bg-sky-500 px-6 py-2 hover:bg-sky-600"
       >
         Back

@@ -5,11 +5,15 @@
 // Справка про “toLocaleDateString”: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/toLocaleDateString 
 export const formatDate = (dateString: string): string => {
     const date = new Date(dateString)
-    const options = {
+    // const options = {
+    //     year: 'numeric',
+    //     month: 'long',
+    //     day: 'numeric',
+    // }
+
+    return date.toLocaleDateString('ru-RU', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-    }
-
-    return date.toLocaleDateString('ru-RU', options);
+    });
 }
